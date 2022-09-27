@@ -23,7 +23,7 @@ namespace SendingEmail
 
             StringBuilder stringBuilder = new();
             stringBuilder.AppendLine(value: "Dear @Model.FirstName,");
-            stringBuilder.AppendLine(value: "<p> Thanks for purchasing @Model.ProductName. We hope you enjoy it </p> ");
+            stringBuilder.AppendLine(value: "<p> Thanks for purchasing @Model. ProductName. We hope you enjoy it </p> ");
             stringBuilder.AppendLine(value: " - Kadir Aztekin");
 
              Email.DefaultSender = sender;
